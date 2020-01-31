@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Pack } from "@potion/layout";
-import { Svg, Circle } from "@potion/element";
+import { Svg, Circle, Rect } from "@potion/element";
 
 const Bubbles = ({ colors }) => {
   const [bubbleData, setBubbleData] = useState([]);
+
   useEffect(() => {
     const generateBubbleData = colors.map((_, i) => ({
       value: Math.floor(Math.random() * (colors.length * 2)) + 1,
@@ -15,7 +16,7 @@ const Bubbles = ({ colors }) => {
   return (
     <div className="bubble-wrap">
       <p>bubbles</p>
-      <Svg width={400} height={400}>
+      <Svg width={600} height={600}>
         <Pack
           data={{
             children: bubbleData
@@ -31,11 +32,18 @@ const Bubbles = ({ colors }) => {
               .map(({ x, y, r, key }, i) => {
                 if (i < colors.length) {
                   return (
-                    <Circle
-                      key={key}
-                      cx={x}
-                      cy={y}
-                      r={r}
+                    // <Circle
+                    //   key={key}
+                    //   cx={x}
+                    //   cy={y}
+                    //   r={r}
+                    //   fill={colors[i].code.hex}
+                    // />
+                    <Rect key={key}
+                      width={r}
+                      height={r}
+                      x={x}
+                      y={y}
                       fill={colors[i].code.hex}
                     />
                   );
