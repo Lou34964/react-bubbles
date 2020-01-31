@@ -27,9 +27,16 @@ In this project you will create a login page and request a token from the server
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain what a token is used for.
+  Tokens are used to authenticate the Client with the Server. Giving a security layer to your Server(s) and App(s) Note: It is important for the developer to choose wisely where to store this token.
 - [ ] What steps can you take in your web apps to keep your data secure?
+  Tokens are your best friend, but you should choose wisely where to save the token for use in your axios calls and page managment. for testing purposes, storing in the local storage is not a bad idea, but IRL you will want to maybe choose a more secure way to store the token and place it in something like a State Storage system, out of prying eye of people that may missuse the token for evil.
 - [ ] Describe how web servers work.
+  Web Servers have to element as i like to say, just as your PC or Mac you have; HardWare and SoftWare. On Web Servers both are called 'Web Server'.
+   - HardWare: This is the phisical components of the server, in large companies you will see these as large stacks called server racks, but the rack its self is not the server. The server is installed into the rack. Servers
+     are much like a PC, they consist of most all the same parts you might see in s PC, but lots of the time there are key differentses, manufactured to serve the user and give the best performence for the server.
+   - SoftWare: This is the Logic and code for the server. The software is the instructions for the computer to communicate with other computers and send, recieve and prossess data.
 - [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+  -- POST (Create), GET (Read), PUT (Update), DELETE (Delete) these are the most commonly used methods
 
 
 ## Project Set Up
