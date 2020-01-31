@@ -35,6 +35,13 @@ body,
   width: 300px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
+  .addBtn {
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    color: #6093ca;
+  }
+
   ul {
     list-style: none;
     text-align: start;
@@ -60,10 +67,28 @@ body,
   margin-right: 36px;
 }
 
+.Form-Container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 form {
   margin-top: 60px;
+  align-self: center;
+  justify-self: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid silver;
+  border-radius: 10%;
+  box-shadow: 1rem 1rem 1rem black;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
   legend {
     padding-left: 40px;
@@ -88,6 +113,7 @@ form {
   display: flex;
   justify-content: space-between;
   padding: 0 36px 0 41px;
+  
 
   button {
     border: none;
@@ -96,4 +122,10 @@ form {
     padding: 3px 8px;
     margin-top: 16px;
   }
+}
+
+.btn{
+  margin-top: 30px;
+  padding: 1rem;
+  font-size: 1rem;
 }
